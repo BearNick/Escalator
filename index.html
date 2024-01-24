@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> <!-- Указание кодировки UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Новостной агрегатор о войне в Украине с обновлениями из телеграм каналов на русском, украинском и английском языках. News aggregator about the war in Ukraine with updates from Telegram channels in Russian, Ukrainian, and English. Новинний агрегатор про війну в Україні з оновленнями з телеграм-каналів російською, українською та англійською мовами.">
+    <meta name="keywords" content="Украина, война, новости, телеграм, агрегатор, Россия, конфликт, мирные переговоры, репортажи, Ukraine, war, news, Telegram, aggregator, Russia, conflict, peace talks, reports, Україна, війна, новини, телеграм, агрегатор, Росія, конфлікт, мирні переговори, репортажі">
+    <meta property="og:title" content="War in Ukraine News Aggregator">
+    <meta property="og:description" content="Следите за последними новостями о войне в Украине с помощью нашего агрегатора новостей. Stay updated on the latest news about the war in Ukraine with our news aggregator. Слідкуйте за останніми новинами про війну в Україні за допомогою нашого агрегатора новин.">
+    <meta property="og:image" content="https://escltr.com/EscalatorLogo.png">
+    <meta property="og:url" content="https://escltr.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="War in Ukraine News Aggregator">
+    <meta name="twitter:description" content="Следите за последними новостями о войне в Украине с помощью нашего агрегатора новостей. Stay updated on the latest news about the war in Ukraine with our news aggregator. Слідкуйте за останніми новинами про війну в Україні за допомогою нашого агрегатора новин.">
+    <meta name="twitter:image" content="https://escltr.com/EscalatorLogo.png">
+    <meta name="google-adsense-account" content="ca-pub-5349309250474141">
+
+    <title>War in Ukraine News Agregator ESCALATOR</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css?v=3.79" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?v=3.79" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css?v=3.79">
+    <link rel="stylesheet" type="text/css" href="style.css?v=3.79">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+</head>
+<body>
+  <div class="filter-container">
+    <div class="header-container"> <!-- This will act as your header -->
+    <rssapp-ticker id="_WqZLImnH45OMifUy"></rssapp-ticker>
+  </div>
+    <div class="logo-container">
+      <a href="https://escltr.com" class="logo-link">
+          <img src="EscalatorLogo.png" alt="Escalator Logo" class="logo">
+      </a>
+    </div>
+    <div class="title-and-filters">
+        <h1>ESCALATOR<span class="beta-label">News</span></h1>
+        <p> Decide whom and what to believe in your life.</p>
+        <div class="filters">
+            <button id="restore-all" class="filter" data-category="all">All</button>
+            <button class="filter" data-category="ua" id="ua">Ua<span class="beta-label">Tg</span></button>
+            <button class="filter" data-category="eng" id="eng">Eng<span class="beta-label">Tg</span></button>
+            <button class="filter" data-category="ru" id="ru">Ru<span class="beta-label">Tg</span></button>
+            <button class="filter" onclick="window.location.href='uanews.html'">Ua<span class="beta-label">📡</span></button>
+            <button class="filter" onclick="window.location.href='engnews.html'">Eng<span class="beta-label">📡 </span></button>
+            <button class="filter" onclick="window.location.href='runews.html'">Ru<span class="beta-label">📡 </span></button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed41" class="rss-feed" data-category="ua">
+            <h4>Повітряні Сили ЗС України 🇺🇦</h4>
+
+        </div>
+        <div id="feed24" class="rss-feed" data-category="ru">
+            <h4>ASTRA<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed1" class="rss-feed" data-category="ua">
+            <h4>Хроники Ридика 🫡 🇺🇦</h4>
+
+        </div>
+
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed3" class="rss-feed" data-category="ua">
+            <h4>Грунт 🇺🇦</h4>
+
+        </div>
+        <div id="feed46" class="rss-feed" data-category="ru">
+            <h4>Михаил Ходорковский<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed4" class="rss-feed" data-category="ua">
+            <h4>Лачен пише 🇺🇦</h4>
+
+        </div>
+        <div id="feed15" class="rss-feed" data-category="ru">
+            <h4>РДК<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed5" class="rss-feed" data-category="ua">
+            <h4>Реальна Війна | Україна 🇺🇦</h4>
+
+        </div>
+        <div id="feed44" class="rss-feed" data-category="ua">
+            <h4>Радіо Свобода 🇺🇦</h4>
+
+        </div>
+        <div id="feed9" class="rss-feed" data-category="ru">
+            <h4>Движение «Весна» 💚<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed6" class="rss-feed" data-category="ru">
+            <h4>Инсайдер UA 🇺🇦</h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed8" class="rss-feed" data-category="ru">
+            <h4>Анатолий Шарий 🇺🇦</h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed42" class="rss-feed" data-category="ua">
+            <h4>Ukraine NOW 🇺🇦</h4>
+
+        </div>
+        <div id="feed31" class="rss-feed" data-category="ru">
+            <h4>Путь Домой<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed10" class="rss-feed" data-category="ru">
+            <h4>Унiан 🇺🇦</h4>
+
+        </div>
+        <div id="feed45" class="rss-feed" data-category="ua">
+            <h4>PEICHEV 🇺🇦</h4>
+
+        </div>
+        <div id="feed13" class="rss-feed" data-category="ru">
+            <h4>Призыв к совести<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed11" class="rss-feed" data-category="eng">
+            <h4>Warriors Ukrainian 🇺🇦</h4>
+
+        </div>
+        <div id="feed47" class="rss-feed" data-category="ru">
+            <h4>Канал Максима Каца<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed12" class="rss-feed" data-category="ua">
+            <h4>💥BEREZOVIEW 🇺🇦</h4>
+
+        </div>
+        <div id="feed20" class="rss-feed" data-category="ru">
+            <h4>Питер против мобилизации<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed14" class="rss-feed" data-category="eng">
+            <h4>War in Ukraine🔞🔥Russia 🇺🇦</h4>
+
+        </div>
+        <div id="feed39" class="rss-feed" data-category="ua">
+            <h4>ГОНЧАРЕНКО 🇺🇦</h4>
+
+        </div>
+        <div id="feed18" class="rss-feed" data-category="ua">
+            <h4>Мілітарний 🇺🇦</h4>
+
+        </div>
+        <div id="feed30" class="rss-feed" data-category="ru">
+            <h4>Первый отдел<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed19" class="rss-feed" data-category="ua">
+            <h4>3-тя ОШБ 🇺🇦</h4>
+
+        </div>
+
+        <div id="feed21" class="rss-feed" data-category="ua">
+            <h4>47 Бригада "Маґура" 🇺🇦</h4>
+
+        </div>
+        <div id="feed22" class="rss-feed" data-category="ru">
+            <h4>Pravda Gerashchenko 🇺🇦</h4>
+
+        </div>
+        <div id="feed23" class="rss-feed" data-category="ua">
+            <h4>СтратКом ЗСУ 🇺🇦</h4>
+
+        </div>
+        <div id="feed29" class="rss-feed" data-category="ru">
+            <h4>Москва против мобилизации<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed25" class="rss-feed" data-category="ua">
+            <h4>36 ОБрМП 🇺🇦</h4>
+
+        </div>
+        <div id="feed43" class="rss-feed" data-category="ua">
+            <h4>ВІДДУШІВДУШУ 🇺🇦</h4>
+
+        </div>
+        <div id="feed26" class="rss-feed" data-category="eng">
+            <h4>The Kyiv Independent 🇺🇦</h4>
+
+        </div>
+        <div id="feed32" class="rss-feed" data-category="ru">
+            <h4>Легион «Свобода России»<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed27" class="rss-feed" data-category="ua">
+            <h4>ЦАПЛІЄНКО_UKRAINE FIGHTS 🇺🇦</h4>
+
+        </div>
+        <div id="feed28" class="rss-feed" data-category="eng">
+            <h4>18+ 𝕎𝕠𝕣𝕝𝕕 ℂ𝕠𝕟𝕗𝕝𝕚𝕔𝕥𝕤 🇺🇦</h4>
+
+        </div>
+        <div id="feed17" class="rss-feed" data-category="ru">
+            <h4>Петербург против войны<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed40" class="rss-feed" data-category="ua">
+            <h4>Андрій Смолій 🇺🇦</h4>
+
+        </div>
+        <div id="feed33" class="rss-feed" data-category="ua">
+            <h4>✙DeepState✙ 🇺🇦</h4>
+
+        </div>
+        <div id="feed34" class="rss-feed" data-category="ua">
+            <h4>✙InformNapalm 🇺🇦</h4>
+
+        </div>
+        <div id="feed16" class="rss-feed" data-category="ru">
+            <h4>Russians for Ukraine<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed35" class="rss-feed" data-category="ua">
+            <h4>Spravdi 🇺🇦</h4>
+
+        </div>
+        <div id="feed36" class="rss-feed" data-category="ua">
+            <h4>🚀 РАКЕТА UA 🇺🇦</h4>
+
+        </div>
+        <div id="feed37" class="rss-feed" data-category="eng">
+            <h4>Bloomberg</h4>
+
+        </div>
+        <div id="feed48" class="rss-feed" data-category="ru">
+            <h4>Дудь<span class="beta-label">"Aquafresh"</span></h4>
+
+        </div>
+        <div id="feed38" class="rss-feed" data-category="eng">
+            <h4>Radio Free Europe</h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed2" class="rss-feed" data-category="ua">
+            <h4>"Штірліц" 🇺🇦</h4>
+
+        </div>
+        <!-- Каждый div представляет собой окно для RSS-канала -->
+        <div id="feed7" class="rss-feed" data-category="ua">
+            <h4>DW Україна 🇺🇦</h4>
+
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- Добавьте иконки соц. сетей с ссылками -->
+        <a href="https://t.me/zaKievzaMir" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+        <a href="mailto:info@escltr.com" target="_blank" class="social-icon"><i class="fas fa-at"></i></a>
+    <p>&copy; 2024 ESCALATOR. All Rights Reserved.</p>
+
+  </div>
+  <div class="desclaimer-content">
+  <p class="disclaimer">
+    Disclaimer: "Escalator News" is a news aggregator platform. The content
+    provided by the Escalator news aggregator
+    is sourced from various Telegram channels and is for informational
+    purposes only. Escalator does not endorse, support, represent, or
+    guarantee the completeness, truthfulness, accuracy, or reliability
+    of any information or communications posted on these channels. Users
+    should verify the news from official or authoritative sources. Escalator
+    shall not be liable for any errors or delays in the content, or for any
+    actions taken in reliance on any content.
+  </p>
+</div>
+</footer>
+<script src="main.js?v=3.79"></script>
+<script src="https://widget.rss.app/v1/ticker.js?v=3.79" type="text/javascript" async></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?v=3.79"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js?v=3.79"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4V7QFSB7YZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-4V7QFSB7YZ');
+</script>
+<script>
+    // Функция для активации фильтра при загрузке страницы
+    window.onload = function() {
+        var hash = window.location.hash.substring(1); // Получаем значение после #
+        if (hash) {
+            // Если есть значение, ищем соответствующий фильтр и кликаем на него
+            var filterButton = document.querySelector('[data-category="' + hash + '"]');
+            if (filterButton) {
+                filterButton.click();
+            }
+        }
+    }
+</script>
+</body>
+</html>
