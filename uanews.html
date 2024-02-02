@@ -21,10 +21,10 @@
     <title>War in Ukraine News Agregator ESCALATOR</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet">
-    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css?v=3.79" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?v=3.79" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css?v=3.79">
-    <link rel="stylesheet" type="text/css" href="style.css?v=3.79">
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css?v=3.86" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css?v=3.86" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css?v=3.86">
+    <link rel="stylesheet" type="text/css" href="style.css?v=3.86">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
@@ -47,9 +47,9 @@
         <p> Decide whom and what to believe in your life.</p>
         <div class="filters">
             <button class="filter" onclick="window.location.href='index.html'">All</button>
-            <button class="filter" onclick="navigateToFilter('ua')">Ua<span class="beta-label">Tg</span></button>
-            <button class="filter" onclick="navigateToFilter('eng')">Eng<span class="beta-label">Tg</span></button>
-            <button class="filter" onclick="navigateToFilter('ru')">Ru<span class="beta-label">Tg</span></button>
+            <button class="filter" onclick="window.location.href='index.html#ua'">Ua<span class="beta-label">Tg</span></button>
+            <button class="filter" onclick="window.location.href='index.html#eng'">Eng<span class="beta-label">Tg</span></button>
+            <button class="filter" onclick="window.location.href='index.html#ru'">Ru<span class="beta-label">Tg</span></button>
             <button class="filter" onclick="window.location.href='uanews.html'">Ua<span class="beta-label">📡</span></button>
             <button class="filter" onclick="window.location.href='engnews.html'">Eng<span class="beta-label">📡</span></button>
             <button class="filter" onclick="window.location.href='runews.html'">Ru<span class="beta-label">📡</span></button>
@@ -58,48 +58,79 @@
     </div>
 
 <rssapp-wall id="t3mpVupPFJ71BXQv"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
-
-    <footer class="footer">
+<!-- Элемент для отображения карусели видео -->
+<div class="fixed-carousel" id="fixed-carousel">
+  <div class="toggle-btn" onclick="toggleCarousel()">Youtube Carousel</div>
+  <div class="carousel-container">
+    <rssapp-carousel id="_uWXXISvhWBasmjc7"></rssapp-carousel>
+  </div>
+</div>
+<footer class="footer">
   <div class="footer-content">
     <!-- Добавьте иконки соц. сетей с ссылками -->
     <a href="https://t.me/zaKievzaMir" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+    <a href="https://discord.com/channels/985615564632358995/1199628975195045959" target="_blank" class="social-icon"><i class="fab fa-discord"></i></a>
+    <a href="https://escalatornews.slack.com/archives/C06FPNX0XUZ" target="_blank" class="social-icon"><i class="fab fa-slack"></i></a>
     <a href="mailto:info@escltr.com" target="_blank" class="social-icon"><i class="fas fa-at"></i></a>
-    <p>&copy; 2024 ESCALATOR. All Rights Reserved.</p>
+<p>&copy; 2024 ESCALATOR. All Rights Reserved.</p>
+<p class="developed-by">Developed by <a href="https://quantumquill.tech" target="_blank">Quantum Quill</a>.</p>
 
-  </div>
-  <div class="desclaimer-content">
-  <p class="disclaimer">
-    Disclaimer: "Escalator News" is a news aggregator platform. The content
-    provided by the Escalator news aggregator
-    is sourced from various Telegram channels and is for informational
-    purposes only. Escalator does not endorse, support, represent, or
-    guarantee the completeness, truthfulness, accuracy, or reliability
-    of any information or communications posted on these channels. Users
-    should verify the news from official or authoritative sources. Escalator
-    shall not be liable for any errors or delays in the content, or for any
-    actions taken in reliance on any content.
-  </p>
+</div>
+<div class="desclaimer-content">
+<p class="disclaimer">
+Disclaimer: "Escalator News" is a news aggregator platform. The content
+provided by the Escalator news aggregator
+is sourced from various Telegram channels and is for informational
+purposes only. Escalator does not endorse, support, represent, or
+guarantee the completeness, truthfulness, accuracy, or reliability
+of any information or communications posted on these channels. Users
+should verify the news from official or authoritative sources. Escalator
+shall not be liable for any errors or delays in the content, or for any
+actions taken in reliance on any content.
+</p>
 </div>
 </footer>
-<script src="main.js?v=3.79"></script>
-<script src="https://widget.rss.app/v1/ticker.js?v=3.79" type="text/javascript" async></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?v=3.79"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js?v=3.79"></script>
+<script src="main.js?v=3.86"></script>
+<script src="https://widget.rss.app/v1/ticker.js?v=3.86" type="text/javascript" async></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js?v=3.86"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js?v=3.86"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4V7QFSB7YZ"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-  gtag('config', 'G-4V7QFSB7YZ');
+gtag('config', 'G-4V7QFSB7YZ');
 </script>
 <script>
-    // Функция для перехода на главную и активации фильтра
-    function navigateToFilter(category) {
-        window.location.href = 'index.html#' + category;
+// Функция для активации фильтра при загрузке страницы
+window.onload = function() {
+    var hash = window.location.hash.substring(1); // Получаем значение после #
+    if (hash) {
+        // Если есть значение, ищем соответствующий фильтр и кликаем на него
+        var filterButton = document.querySelector('[data-category="' + hash + '"]');
+        if (filterButton) {
+            filterButton.click();
+        }
     }
+}
 </script>
+<!-- Скрипт для "всплывающей" ленты -->
+<script>
+function toggleCarousel() {
+var carouselContainer = document.querySelector('.fixed-carousel');
+carouselContainer.classList.toggle('collapsed');
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+setTimeout(function() {
+  var carouselContainer = document.getElementById('fixed-carousel');
+  carouselContainer.style.display = 'flex';
+}, 5000); // Показать карусель через 5 секунд после загрузки страницы
+});
+</script>
+<script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
 
 </body>
 </html>
