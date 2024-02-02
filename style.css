@@ -11,12 +11,12 @@ body {
 /* Остальные стили оставляем без изменений */
 .rss-feed {
     position: relative;
-    max-width: 90%; /* максимальная ширина элемента, можно изменить */
+    max-width: 100%; /* максимальная ширина элемента, можно изменить */
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
     padding: 10px;
     height: 222px;
-    overflow: auto;
+    overflow: hidden;
     background-color: #f9f9f9;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     margin: 0 auto; /* центрирование каждого элемента внутри сетки */
@@ -197,6 +197,12 @@ body {
   margin: 5px 0;
   color: black;
 }
+.developed-by {
+    color: #3498db; /* Цвет Quantum Quill */
+}
+.developed-by:hover {
+    color: #000; /* Цвет при наведении (черный) */
+}
 .disclaimer {
   font-size: 0.8rem; /* Размер шрифта для disclaimer */
   margin-top: 20px; /* Отступ сверху */
@@ -208,10 +214,41 @@ body {
   transition: transform 1.5s ease; /* Анимация при наведении */
   color: white;
 }
-
 /* Увеличение размера при наведении */
 .social-icon:hover {
   transform: scale(1.5);
   transition: transform 1.5s ease; /* Анимация при наведении */
   color: black;
+}
+/* Стили для "всплывающей" ленты */
+.fixed-carousel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fixed-carousel .toggle-btn {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+.fixed-carousel .toggle-btn:hover {
+  background-color: gold;
+}
+.fixed-carousel .carousel-container {
+  display: none;
+  width: 100%;
+}
+.fixed-carousel.collapsed .carousel-container {
+  display: block;
 }
